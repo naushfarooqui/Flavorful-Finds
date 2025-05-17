@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorful Finds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🍳</span>
+                    Flavorful<span>Finds</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active nav-link" data-page="home">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="vegetarian">Vegetarian</a></li>
+                        <li><a href="#" class="nav-link" data-page="non-vegetarian">Non-Vegetarian</a></li>
+                        <li><a href="#" class="nav-link" data-page="dessert">Desserts</a></li>
+                        <li><a href="#" class="nav-link" data-page="meal-planner">Meal Planner</a></li>
+                        <li><a href="#" class="nav-link" data-page="leftover">Leftover Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Delicious Recipes</h1>
+                <p>Whether you're a beginner in the kitchen or a seasoned home chef, our goal is to make cooking fun, easy, and exciting.</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container">
+            <section>
+                <h2 class="section-title">Popular Recipes</h2>
+                
+                <!-- Filters -->
+                <div class="filters">
+                    <h3>Filter by:</h3>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+                        <button class="filter-btn" data-filter="non-vegetarian">Non-Vegetarian</button>
+                        <button class="filter-btn" data-filter="dessert">Dessert</button>
+                    </div>
+                        <h3>Cooking Time:</h3>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-time="all">All</button>
+                        <button class="filter-btn" data-time="quick">Quick (< 30 min)</button>
+                        <button class="filter-btn" data-time="medium">Medium (30-60 min)</button>
+                        <button class="filter-btn" data-time="long">Long (> 60 min)</button>
+                    </div>
+                </div>
+                
+                <!-- Recipe Cards -->
+                <div class="recipes-grid">
+                    <!-- Recipe Card 1 -->
+                    <div class="recipe-card" data-category="vegetarian" data-time="quick" data-page="home">
+                        <img src="creamy mushroom pasta.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Vegetarian</span>
+                            <h3 class="recipe-title">Creamy Mushroom Pasta</h3>
+                            <p class="recipe-desc">A delicious creamy pasta dish with sautéed mushrooms, garlic, and herbs.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                25 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★☆
+                                </div>
+                                <div class="recipe-difficulty">Easy</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe Card 2 -->
+                    <div class="recipe-card" data-category="non-vegetarian" data-time="medium" data-page="home">
+                        <img src="Grilled Lemon Herb Chicken.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Non-Vegetarian</span>
+                            <h3 class="recipe-title">Grilled Lemon Herb Chicken</h3>
+                            <p class="recipe-desc">Juicy chicken breasts marinated in lemon, herbs, and garlic, then grilled to perfection.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                45 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★★
+                                </div>
+                                <div class="recipe-difficulty">Medium</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe Card 3 -->
+                    <div class="recipe-card" data-category="dessert" data-time="long" data-page="home">
+                        <img src="Chocolate Lava Cake.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Dessert</span>
+                            <h3 class="recipe-title">Chocolate Lava Cake</h3>
+                            <p class="recipe-desc">Decadent chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                65 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★★
+                                </div>
+                                <div class="recipe-difficulty">Hard</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe Card 4 -->
+                    <div class="recipe-card" data-category="vegetarian" data-time="medium" data-page="home">
+                        <img src="Spinach and Feta Stuffed Peppers.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Vegetarian</span>
+                            <h3 class="recipe-title">Spinach and Feta Stuffed Peppers</h3>
+                            <p class="recipe-desc">Bell peppers stuffed with spinach, feta cheese, rice, and herbs.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                50 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★☆
+                                </div>
+                                <div class="recipe-difficulty">Medium</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe Card 5 -->
+                    <div class="recipe-card" data-category="non-vegetarian" data-time="quick" data-page="home">
+                        <img src="Shrimp Stir Fry.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Non-Vegetarian</span>
+                            <h3 class="recipe-title">Shrimp Stir Fry</h3>
+                            <p class="recipe-desc">Quick and flavorful shrimp stir fry with colorful vegetables and a savory sauce.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                20 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★☆
+                                </div>
+                                <div class="recipe-difficulty">Easy</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recipe Card 6 -->
+                    <div class="recipe-card" data-category="dessert" data-time="medium" data-page="home">
+                        <img src="Apple Crumble.jpg" alt="Recipe Image" class="recipe-image">
+                        <div class="recipe-content">
+                            <span class="recipe-category">Dessert</span>
+                            <h3 class="recipe-title">Apple Crumble</h3>
+                            <p class="recipe-desc">Warm spiced apples topped with a crisp oat and brown sugar crumble.</p>
+                            <div class="recipe-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                55 mins
+                            </div>
+                            <div class="recipe-meta">
+                                <div class="recipe-rating">
+                                    ★★★★☆
+                                </div>
+                                <div class="recipe-difficulty">Easy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Vegetarian Page -->
+    <div id="vegetarian" class="page">
+        <main class="container">
+            <h2 class="section-title">Vegetarian Recipes</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <h3>Cooking Time:</h3>
+                <div class="filter-group">
+                    <button class="filter-btn active" data-time="all">All</button>
+                    <button class="filter-btn" data-time="quick">Quick (< 30 min)</button>
+                    <button class="filter-btn" data-time="medium">Medium (30-60 min)</button>
+                    <button class="filter-btn" data-time="long">Long (> 60 min)</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Cards -->
+            <div class="recipes-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="quick">
+                    <img src="creamy mushroom pasta.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Creamy Mushroom Pasta</h3>
+                        <p class="recipe-desc">A delicious creamy pasta dish with sautéed mushrooms, garlic, and herbs.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            25 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="medium">
+                    <img src="Spinach and Feta Stuffed Peppers.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Spinach and Feta Stuffed Peppers</h3>
+                        <p class="recipe-desc">Bell peppers stuffed with spinach, feta cheese, rice, and herbs.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            50 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="quick">
+                    <img src="Mediterranean Quinoa Salad.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Mediterranean Quinoa Salad</h3>
+                        <p class="recipe-desc">Fresh quinoa salad with cucumber, tomatoes, olives, and feta cheese.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            20 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="long">
+                    <img src="Vegetable Lasagna.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Vegetable Lasagna</h3>
+                        <p class="recipe-desc">Layers of pasta, roasted vegetables, ricotta, and marinara sauce baked to perfection.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            75 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 5 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="medium">
+                    <img src="Eggplant Parmesan.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Eggplant Parmesan</h3>
+                        <p class="recipe-desc">Breaded eggplant slices baked with marinara sauce and melted mozzarella cheese.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            55 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 6 -->
+                <div class="recipe-card" data-category="vegetarian" data-time="quick">
+                    <img src="Chickpea Curry.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Vegetarian</span>
+                        <h3 class="recipe-title">Chickpea Curry</h3>
+                        <p class="recipe-desc">Flavorful chickpea curry with tomatoes, onions, and aromatic spices.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            30 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+               
+    <!-- Non-Vegetarian Page -->
+    <div id="non-vegetarian" class="page">
+        <main class="container">
+            <h2 class="section-title">Non-Vegetarian Recipes</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <h3>Cooking Time:</h3>
+                <div class="filter-group">
+                    <button class="filter-btn active" data-time="all">All</button>
+                    <button class="filter-btn" data-time="quick">Quick (< 30 min)</button>
+                    <button class="filter-btn" data-time="medium">Medium (30-60 min)</button>
+                    <button class="filter-btn" data-time="long">Long (> 60 min)</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Cards -->
+            <div class="recipes-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="medium">
+                    <img src="Grilled Lemon Herb Chicken.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Grilled Lemon Herb Chicken</h3>
+                        <p class="recipe-desc">Juicy chicken breasts marinated in lemon, herbs, and garlic, then grilled to perfection.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            45 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="quick">
+                    <img src="Shrimp Stir Fry.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Shrimp Stir Fry</h3>
+                        <p class="recipe-desc">Quick and flavorful shrimp stir fry with colorful vegetables and a savory sauce.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            20 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="long">
+                    <img src="Beef Bourguignon.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Beef Bourguignon</h3>
+                        <p class="recipe-desc">Classic French stew with tender beef, mushrooms, and red wine sauce.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            180 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Hard</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="medium">
+                    <img src="Salmon with Dill Sauce.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Salmon with Dill Sauce</h3>
+                        <p class="recipe-desc">Pan-seared salmon fillets topped with a creamy dill sauce.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            35 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 5 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="quick">
+                    <img src="Turkey Meatballs.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Turkey Meatballs</h3>
+                        <p class="recipe-desc">Juicy turkey meatballs flavored with herbs and served with marinara sauce.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            25 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 6 -->
+                <div class="recipe-card" data-category="non-vegetarian" data-time="long">
+                    <img src="Slow Cooker Pulled Pork.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Non-Vegetarian</span>
+                        <h3 class="recipe-title">Slow Cooker Pulled Pork</h3>
+                        <p class="recipe-desc">Tender pulled pork cooked low and slow with BBQ sauce and spices.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            240 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+   
+
+
+  </main>
+    </div>
+
+    <!-- Desserts Page -->
+    <div id="dessert" class="page">
+        <main class="container">
+            <h2 class="section-title">Dessert Recipes</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <h3>Cooking Time:</h3>
+                <div class="filter-group">
+                    <button class="filter-btn active" data-time="all">All</button>
+                    <button class="filter-btn" data-time="quick">Quick (< 30 min)</button>
+                    <button class="filter-btn" data-time="medium">Medium (30-60 min)</button>
+                    <button class="filter-btn" data-time="long">Long (> 60 min)</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Cards -->
+            <div class="recipes-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card" data-category="dessert" data-time="long">
+                    <img src="Chocolate Lava Cake.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Chocolate Lava Cake</h3>
+                        <p class="recipe-desc">Decadent chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            65 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Hard</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card" data-category="dessert" data-time="medium">
+                    <img src="Apple Crumble.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Apple Crumble</h3>
+                        <p class="recipe-desc">Warm spiced apples topped with a crisp oat and brown sugar crumble.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            55 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card" data-category="dessert" data-time="quick">
+                    <img src="Strawberry Shortcake.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Strawberry Shortcake</h3>
+                        <p class="recipe-desc">Fluffy biscuits topped with fresh strawberries and whipped cream.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            25 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card" data-category="dessert" data-time="medium">
+                    <img src="Tiramisu.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Tiramisu</h3>
+                        <p class="recipe-desc">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            40 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Medium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 5 -->
+                <div class="recipe-card" data-category="dessert" data-time="long">
+                    <img src="Cheesecake.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Cheesecake</h3>
+                        <p class="recipe-desc">Creamy New York style cheesecake with a graham cracker crust.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            90 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★★
+                            </div>
+                            <div class="recipe-difficulty">Hard</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 6 -->
+                <div class="recipe-card" data-category="dessert" data-time="quick">
+                    <img src="Chocolate Chip Cookies.jpg" alt="Recipe Image" class="recipe-image">
+                    <div class="recipe-content">
+                        <span class="recipe-category">Dessert</span>
+                        <h3 class="recipe-title">Chocolate Chip Cookies</h3>
+                        <p class="recipe-desc">Classic chocolate chip cookies with crisp edges and chewy centers.</p>
+                        <div class="recipe-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            30 mins
+                        </div>
+                        <div class="recipe-meta">
+                            <div class="recipe-rating">
+                                ★★★★☆
+                            </div>
+                            <div class="recipe-difficulty">Easy</div>
+                        </div>
+                    </div>
+                </div>
+
+              
+        </main>
+    </div>
+
+    <!-- Meal Planner Page -->
+    <div id="meal-planner" class="page">
+        <main class="container">
+            <section class="meal-planner">
+                <h2 class="section-title">Weekly Meal Planner</h2>
+                <p>Plan your meals for the week ahead! Drag and drop recipes or add your own meals to each day.</p>
+                
+                <div class="days-container">
+                    <!-- Monday -->
+                    <div class="day-column">
+                        <div class="day-header">Monday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tuesday -->
+                    <div class="day-column">
+                        <div class="day-header">Tuesday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Wednesday -->
+                    <div class="day-column">
+                        <div class="day-header">Wednesday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Thursday -->
+                    <div class="day-column">
+                        <div class="day-header">Thursday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Friday -->
+                    <div class="day-column">
+                        <div class="day-header">Friday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Saturday -->
+                    <div class="day-column">
+                        <div class="day-header">Saturday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Sunday -->
+                    <div class="day-column">
+                        <div class="day-header">Sunday</div>
+                        <div class="meal-slot" data-meal="breakfast">
+                            <span class="meal-type">Breakfast</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="lunch">
+                            <span class="meal-type">Lunch</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                        <div class="meal-slot" data-meal="dinner">
+                            <span class="meal-type">Dinner</span>
+                            <span class="meal-name">Click to add meal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meal-buttons">
+                    <button class="btn">Auto-Fill Planner</button>
+                    <button class="btn btn-secondary">Reset Meal Plan</button>
+                    <button class="btn">Save Meal Plan</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Leftover Ingredients Page -->
+    <div id="leftover" class="page">
+        <main class="container">
+            <section class="leftover-ingredients">
+                <h2 class="section-title">Cook with Leftover Ingredients</h2>
+                <p>Select the ingredients you have on hand, and we'll suggest recipes you can make!</p>
+                <br>
+                    
+                    <h3>Common Ingredients:</h3>
+                    <div class="ingredients-list">
+                        <div class="ingredient-item">Chicken</div>
+                        <div class="ingredient-item">Rice</div>
+                        <div class="ingredient-item">Pasta</div>
+                        <div class="ingredient-item">Potatoes</div>
+                        <div class="ingredient-item">Onions</div>
+                        <div class="ingredient-item">Tomatoes</div>
+                        <div class="ingredient-item">Bell Peppers</div>
+                        <div class="ingredient-item">Garlic</div>
+                        <div class="ingredient-item">Beef</div>
+                        <div class="ingredient-item">Cheese</div>
+                        <div class="ingredient-item">Eggs</div>
+                        <div class="ingredient-item">Carrots</div>
+                        <div class="ingredient-item">Spinach</div>
+                        <div class="ingredient-item">Mushrooms</div>
+                        <div class="ingredient-item">Broccoli</div>
+                        <div class="ingredient-item">Bread</div>
+                    </div>
+                    
+                    <div class="meal-buttons">
+                        <button class="btn">Find Recipes</button>
+                    </div>
+                    <div class="search-results">
+                        <h3>Recipe Suggestions:</h3>
+                        <div class="recipes-grid">
+                             Recipes will be populated by JavaScript 
+                        </div>
+                    </div>
+                </div>          
+            </section>
+        </main>
+    </div>
+<br><br><br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Flavorful Finds is your go-to source for delicious recipes for every meal, dietary preference, and occasion.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Recipe Categories</h3>
+                    <ul>
+                        <li><a href="#" data-page="vegetarian">Vegetarian</a></li>
+                        <li><a href="#" data-page="non-vegetarian">Non-Vegetarian</a></li>
+                        <li><a href="#" data-page="desserts">Desserts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="meal-planner">Meal Planner</a></li>
+                        <li><a href="#" data-page="leftover">Leftover Recipes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flavorful Finds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
